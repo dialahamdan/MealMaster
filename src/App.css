@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400");
+.sss {
+  font-family: "Lobster", sans-serif;
+}
+.FF {
+  margin: 0 8px;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.c1 {
+  color: #080838;
+}
+.c2 {
+  color: #111154;
+}
+.c3 {
+  color: #191970;
+}
+.c4 {
+  color: #292c7b;
+}
+.c5 {
+  color: #967859;
+}
+.c6 {
+  color: #d2b48c;
+}
+.c7 {
+  color: #e5cba0e1;
+}
+.c8 {
+  color: #f1e9d2;
+}
+.c9 {
+  color: #6610f2;
+}
+.c10 {
+  color: #133336;
+}
+.c11 {
+  color: #285f6b;
+}
+.c12 {
+  color: #367d8a;
+}
+.c13 {
+  color: #124e66;
+}
+.c14 {
+  color: #748d92;
+}
+.c15 {
+  color: #1f162f;
+}
+.c16 {
+  color: #6e2b62;
+}
+.c17 {
+  color: #8b0773;
+}
+.c18 {
+  color: #7e036772;
+}
+.c19 {
+  color: #e698d7;
+}
+.c20 {
+  color: #7b4671;
+}
+.c21 {
+  color: #947ea7;
+}
+.c22 {
+  color: #d0312d;
+}
+.c23 {
+  color: #900d09;
+}
+.c24 {
+  color: #680c07;
+}
+.c25 {
+  color: #212529;
+}
+
+.c26 {
+  color: white;
+}
+.c27 {
+  color: #fdeae8;
+}
+
+.bg1 {
+  background-color: #080838;
+}
+.bg2 {
+  background-color: #111154;
+}
+.bg3 {
+  background-color: #191970;
+}
+.bg4 {
+  background-color: #292c7b;
+}
+.bg5 {
+  background-color: #967859;
+}
+.bg6 {
+  background-color: #d2b48c;
+}
+.bg7 {
+  background-color: #e5cba0e1;
+}
+.bg8 {
+  background-color: #f1e9d2;
+}
+.bg9 {
+  background-color: #6610f2;
+}
+.bg10 {
+  background-color: #133336;
+}
+.bg11 {
+  background-color: #285f6b;
+}
+.bg12 {
+  background-color: #367d8a;
+}
+.bg13 {
+  background-color: #124e66;
+}
+.bg14 {
+  background-color: #748d92;
+}
+.bg15 {
+  background-color: #1f162f;
+}
+.bg16 {
+  background-color: #6e2b62;
+}
+.bg17 {
+  background-color: #8b0773;
+}
+.bg18 {
+  background-color: #7e036772;
+}
+.bg19 {
+  background-color: #e698d7;
+}
+.bg20 {
+  background-color: #7b4671;
+}
+.bg21 {
+  background-color: #947ea7;
+}
+.bg22 {
+  background-color: #d0312d;
+}
+.bg23 {
+  background-color: #900d09;
+}
+.bg24 {
+  background-color: #680c07;
+}
+.bg25 {
+  background-color: #212529;
+}
+
+.bg26 {
+  background-color: white;
+}
+.bg27 {
+  background-color: #fdeae8;
+}
+.bg28 {
+  background: rgb(161, 161, 161, 0.5);
+  border-bottom: 3px solid rgb(161, 161, 161);
+}
+.bg29 {
+  background-color: white;
+}

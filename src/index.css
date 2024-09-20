@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Dark mode  */
+:root {
+  --background-color: #f6f6f6;
+  --foreground-color: #003cff;
+  --primary-text-color: #0a0a0a;
+  --secondary-text-color: #ffffff;
+  --toggle-bg: #f0eb9d;
+  --toggle-fg: #ffd000;
+}
+
+[data-theme="dark"] {
+  --background-color: #0a0a0a;
+  --foreground-color: #567aff;
+  --primary-text-color: #f6f6f6;
+  --secondary-text-color: #0a0a0a;
+  --toggle-bg: #283452;
+  --toggle-fg: #00a6ff;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(84, 84, 84);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #191970;
+  opacity: 0.5;
+  border-radius: 100px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #020258;
+}
+
+/* Optional: Adjust scrollbar width and height */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 1px;
+}

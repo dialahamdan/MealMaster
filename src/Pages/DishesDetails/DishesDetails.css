@@ -1,0 +1,113 @@
+.DishesDetailsSection {
+  font-family: "Playfair Display", serif;
+}
+.DishesDetailsHeader {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  font-family: "Playfair Display", serif;
+  align-items: center;
+  padding: 50px 10px;
+  height: auto;
+}
+
+.DishesDetailsTitle {
+  flex-grow: 1;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.DishesDetailsTitle h1 {
+  font-size: 50px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.DishesDetailsTitle p {
+  font-size: 22px;
+  font-weight: 1000;
+  color: black;
+}
+.recipe-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+  color: black;
+  gap: 10px;
+}
+
+.recipe-info {
+  flex: 1;
+  max-width: 50%;
+  padding: 78px 0;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  height: 400px;
+}
+
+.recipe-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.recipe-info h2 {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 600;
+  font-size: 40px;
+}
+.recipe-info h3 {
+  margin-left: 23px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.recipe-ingredients {
+  font-size: 14px;
+  line-height: 1.6;
+  padding: 0 10px;
+  margin-left: 20px;
+}
+
+.recipe-image {
+  flex: 1;
+  max-width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+.recipe-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .recipe-container {
+    flex-direction: column-reverse;
+  }
+
+  .recipe-info,
+  .recipe-image {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .recipe-title {
+    font-size: 1.8rem;
+  }
+
+  .recipe-ingredients {
+    font-size: 1rem;
+  }
+}

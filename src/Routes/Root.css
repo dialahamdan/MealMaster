@@ -1,0 +1,17 @@
+/* Define global styles for dark mode */
+body.dark-mode {
+  background-color: #212529;
+  color: #fff;
+  transition: 0.9s;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 50%;
+  border: 0;
+}
+.logosContainer.dark-mode {
+  background-color: #db0303;
+  color: #fff;
+  transition: 0.9s;
+}

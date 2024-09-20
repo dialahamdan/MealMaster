@@ -1,0 +1,93 @@
+.tickerContainer {
+  width: 100%;
+  overflow: hidden;
+  background-color: #dfe6e9;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 14px;
+  box-sizing: border-box;
+
+  position: relative;
+  margin: 100px 0;
+}
+
+.tickerContent {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  white-space: nowrap;
+  animation: scrollTickerReverse 20s linear infinite;
+}
+
+.tickerItem {
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  font-size: 18px;
+  color: #2d3436;
+  font-family: "Arial", sans-serif;
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: bold;
+}
+
+.icon {
+  fill: #191970;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+@keyframes scrollTickerReverse {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.tickerRibbon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: #191970;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tickerContainer:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  width: 50px;
+  height: 10px;
+  background-color: #0984e3;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.tickerContainer:after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  width: 50px;
+  height: 10px;
+  background-color: #0984e3;
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .tickerItem {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .tickerItem {
+    font-size: 14px;
+  }
+}

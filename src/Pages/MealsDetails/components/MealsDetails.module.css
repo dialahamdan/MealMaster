@@ -1,0 +1,156 @@
+.details {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 200px 0 100px 0;
+}
+
+.details:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.details h1 {
+  font-size: 2.5rem;
+  margin: 60px 0;
+  background: linear-gradient(to right, #ffc170, #7d3e00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.2;
+  text-align: center;
+  font-weight: 800;
+}
+
+.mealDetailsImage {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.recipeImage {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.recipeImage:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.details p {
+  font-size: 1.2rem;
+  background: linear-gradient(to right, #ffc170, #7d3e00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.6;
+  margin: 40px 0;
+  text-align: center;
+  font-weight: 600;
+}
+
+.publisher {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.publisher p {
+  font-size: 1.2rem;
+  font-weight: bold;
+
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.publisher a {
+  display: inline-block;
+  padding: 10px 15px;
+
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-align: center;
+}
+
+.publisher a:hover {
+  transform: translateY(-3px);
+}
+
+.details a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: linear-gradient(to right, #ffc170, #7d3e00);
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-align: center;
+  font-weight: 600;
+}
+
+.details a:hover {
+  background: linear-gradient(to right, #e4942a, #381d03);
+  transform: translateY(-3px);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .details {
+    padding: 20px;
+  }
+
+  .details h1 {
+    font-size: 2rem;
+  }
+
+  .details p {
+    font-size: 1rem;
+  }
+
+  .publisher p {
+    font-size: 1rem;
+  }
+
+  .publisher a,
+  .details a {
+    padding: 8px 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .details {
+    padding: 20px;
+  }
+
+  .details h1 {
+    font-size: 1.8rem;
+  }
+
+  .details p {
+    font-size: 0.9rem;
+  }
+
+  .publisher p {
+    font-size: 0.9rem;
+  }
+
+  .publisher a,
+  .details a {
+    padding: 8px 12px;
+  }
+}

@@ -1,0 +1,99 @@
+/* Rotate the image 360 degrees along the X-axis */
+.hover-animation {
+  transition: transform 2s ease;
+  height: 50px;
+  width: auto;
+  cursor: pointer;
+}
+.hover-animation:hover {
+  transform: rotateX(360deg);
+}
+
+@media (max-width: 768px) {
+  .hover-animation {
+    height: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hover-animation {
+    height: 30px;
+  }
+}
+
+.navbar-nav .nav-link {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.navbar-nav .nav-link:hover {
+  border-bottom: 3px solid #ff6cab;
+}
+/* Remove specific styles from .nav-link inside the dropdown */
+.nav-item.dropdown .nav-link {
+  background-color: transparent !important; /* Remove background color */
+  border-radius: 0 !important; /* Remove border radius */
+  color: inherit !important; /* Ensure text color is inherited */
+  box-shadow: none !important; /* Remove any box shadow */
+  text-decoration: none !important; /* Remove any text decoration */
+}
+
+/* Additionally, you can reset the hover and focus states */
+.nav-item.dropdown .nav-link:hover,
+.nav-item.dropdown .nav-link:focus {
+  background-color: transparent !important; /* Ensure hover doesn't apply background */
+  color: inherit !important; /* Keep color unchanged on hover/focus */
+}
+
+.navbar-nav .nav-link.active {
+  background-color: #ff6cab;
+  border-radius: 10px;
+}
+.borderNav {
+  border: 2px solid #ff6cab;
+}
+.borderNav:hover {
+  border: 2px solid #ff6cab;
+}
+@media (max-width: 992px) {
+  .navbar-nav .nav-link {
+    padding: 10px 20px;
+  }
+}
+
+/* Custom Dropdown Styling Videos */
+.custom-dropdown {
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.custom-dropdown-item {
+  background-color: transparent;
+  text-align: center;
+  padding: 10px 20px;
+  margin: 5px 0;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 5px;
+}
+
+.custom-dropdown-item:hover,
+.custom-dropdown-item:focus {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.custom-dropdown-divider {
+  border-top: 1px solid #444;
+  margin: 10px 0;
+}
+.SizeNav {
+  height: 65px;
+}
+
+@media (max-width: 991.98px) {
+  .SizeNav {
+    height: auto;
+  }
+}
+.sizeNavUl {
+  font-size: 16px;
+}

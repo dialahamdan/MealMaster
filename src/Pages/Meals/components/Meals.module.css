@@ -1,0 +1,308 @@
+.TotalMeals {
+  margin-top: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.MM {
+  margin-top: 180px;
+  margin-left: 10px;
+}
+
+.btnprimary {
+  background: linear-gradient(to right, #ffc170, #7d3e00);
+  color: white;
+}
+.offcanvasHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: linear-gradient(to right, #7d3e00, #ffc170);
+}
+.offcanvasTitle {
+  font-weight: 800;
+}
+
+.offcanvasParagraph {
+  font-weight: 800;
+}
+.offcanvasbody2 {
+  background: linear-gradient(to right, #ffc170, #7d3e00);
+}
+.menuList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.menuLink {
+  display: block;
+  padding: 5px 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.menuLink:hover {
+  color: #ffffff;
+}
+
+.menuLink.active {
+  color: #ffffff;
+}
+
+/* Apply dark mode background to .logosContainer */
+.logosContainer.darkMode {
+  background-color: #3d3d3d;
+  transition: background-color 0.9s ease;
+}
+
+/* Target the ::after pseudo-element in dark mode */
+.logosContainer.box.darkMode::after {
+  background-color: #3d3d3d;
+  transition: background-color 0.9s ease;
+}
+
+.box {
+  position: relative;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #ffffff;
+}
+.box:hover {
+  transform: scale(0.95) translateY(-10px);
+  box-shadow: 0 15px 25px #ffc170;
+}
+.cardimgtop {
+  transition: transform 0.9s ease;
+}
+.box:hover .cardimgtop {
+  transform: scale(1.05);
+}
+
+.cardbody {
+  transition: transform 0.9s ease;
+}
+
+.box:hover .cardbody {
+  transform: translateY(-5px);
+}
+
+.box .cardtitle,
+.box .cardtext {
+  background: linear-gradient(to right, #ffc170, #7d3e00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.box .btnsecondary {
+  background: linear-gradient(to right, #ffc170, #7d3e00);
+  border-radius: 6px;
+  transform: scale(1.1);
+}
+.box .btnsecondary11 {
+  background: linear-gradient(to right, #ffc170, #7d3e00);
+  border-radius: 6px;
+  transform: scale(1.1);
+}
+
+.box .btnsecondary:hover {
+  background: linear-gradient(to right, #e4942a, #381d03);
+  transform: scale(1.1);
+}
+.box .btnsecondary11:hover {
+  background: linear-gradient(to right, #e4942a, #381d03);
+  transform: scale(1.1);
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px;
+  z-index: -2;
+  background: conic-gradient(transparent, transparent, transparent, #ffc170);
+  animation: animate 4s linear infinite;
+}
+
+.box::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  z-index: -1;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Pagination.module.css */
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+
+  border-radius: 50px;
+}
+
+.pageItem {
+  margin: 0 8px;
+}
+
+.pageLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #ffc170;
+
+  color: #ffc170;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  outline: none;
+}
+
+.pageLink:hover {
+  background: linear-gradient(to right, #ffc170, #7d3e00);
+  color: #fff;
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.pageItemActive .pageLink {
+  background: linear-gradient(to right, #ffc170, #7d3e00);
+  color: #fff;
+  border-color: #ffc170;
+  transform: scale(1.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.pageItemDisabled .pageLink {
+  color: #ccc;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: inline;
+}
+
+/* Logo.module.css */
+
+/* Pulse Animation */
+.pulseAnimation {
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Rotate Animation */
+.rotateAnimation {
+  animation: rotate 4s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Color Animation */
+.colorAnimation {
+  animation: colorChange 3s linear infinite;
+}
+
+@keyframes colorChange {
+  0% {
+    filter: hue-rotate(0deg) brightness(1);
+  }
+  50% {
+    filter: hue-rotate(180deg) brightness(1.2);
+  }
+  100% {
+    filter: hue-rotate(360deg) brightness(1);
+  }
+}
+
+/* Hover Animation */
+.logoContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.logoImage {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logoContainer:hover .logoImage {
+  transform: scale(1.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Combined Animation */
+.combinedAnimation {
+  animation: pulse 1.5s infinite, rotate 4s linear infinite,
+    colorChange 3s linear infinite;
+}
+
+@media (max-width: 768px) {
+  .TotalMeals {
+    margin: 120px 0;
+  }
+  .MM {
+    margin-top: 220px;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .logoContainer {
+    margin: 100px 200px 0 0;
+  }
+}

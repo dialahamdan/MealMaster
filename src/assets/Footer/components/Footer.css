@@ -1,0 +1,54 @@
+.icon-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+.icon11 {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.icon11:hover {
+  transform: scale(1.2);
+  color: #000000;
+}
+
+.backgroundcolorFooter {
+  background-color: #ff6cab;
+}
+.backgroundcolorFooter:hover {
+  background-color: #f64692;
+}
+.borderFooter {
+  border: 2px solid #ff6cab;
+}
+.borderFooter:hover {
+  border: 2px solid #ff6cab;
+}
+
+.weightFooter {
+  font-weight: 700;
+}
+.colorFooter {
+  color: #ff6cab;
+  font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .icon11 {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 576px) {
+  .icon11 {
+    width: 30px;
+    height: 30px;
+  }
+}

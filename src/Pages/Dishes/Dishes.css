@@ -1,0 +1,195 @@
+.logosContainer.darkMode {
+  background-color: #3d3d3d; /* Dark mode background */
+  transition: 0.9s;
+}
+
+.dishcard.darkMode {
+  color: white;
+  transition: 0.9s;
+}
+.dishesContainer {
+  margin: 0 80px;
+  font-family: "Playfair Display", serif;
+  margin-top: 10px;
+}
+.dishesHeader {
+  color: black;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  font-family: "Playfair Display", serif;
+  align-items: center;
+}
+
+.dishesTitle {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.dishesHeaderImg {
+  position: relative;
+  width: 100%;
+  margin: 0;
+}
+
+.dishesHeaderImg img {
+  width: 100%;
+  opacity: 1;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+  height: 80vh;
+  transition: opacity 0.5s ease-in-out;
+}
+.dishesHeaderImg:hover img {
+  opacity: 0.8;
+}
+
+.dishesTitleOverlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+.dishesHeaderImg:hover .dishesTitleOverlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dishesTitleOverlay h1 {
+  margin: 0;
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.dishesTitleOverlay p {
+  margin-top: 10px;
+  font-size: 22px;
+  font-weight: 1000;
+}
+
+.dishes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 50px 0;
+}
+
+.dish-card {
+  width: calc(50% - 20px);
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dish-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.dishesImg {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.dish-content {
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.dish-content h2 {
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: black;
+}
+.dish-content p {
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+}
+.show-recipe-link {
+  align-self: flex-end;
+  margin-top: auto;
+  padding: 10px 20px;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  text-decoration: underline;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.show-recipe-link:hover {
+  color: black;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .dishesTitleOverlay h1 {
+    font-size: 1.5rem;
+  }
+
+  .dishesTitleOverlay p {
+    font-size: 1rem;
+  }
+}
+
+/* Responsive Design */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .dish-card {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .dishesContainer {
+    margin: 0 40px 0;
+  }
+  .dish-card {
+    width: 100%;
+  }
+  .dish-content h2 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: black;
+  }
+  .dish-content p {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .show-recipe-link {
+    align-self: flex-end;
+    margin-top: auto;
+    padding: 0 20px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    text-decoration: underline;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}

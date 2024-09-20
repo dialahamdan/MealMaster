@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap");
+
+.TotalAboutUs {
+  margin-top: 60px;
+}
+
+.Section1 {
+  margin: 50px 0;
+}
+
+/* General Styles */
+.containerJ {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-bottom: 50px;
+}
+
+.jobApp {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(
+    to right,
+    #6e0a87,
+    #1da5f1
+  ); /* Example gradient with two colors */
+  border-radius: 20px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  height: 700px;
+  box-sizing: border-box;
+  padding: 2rem;
+}
+
+.form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.rightSide {
+  width: 50%;
+  background: linear-gradient(to right, #24216b, #1da5f1);
+  border-radius: 130px 20px 20px 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightSideInfo {
+  color: #fff;
+  text-align: center;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.input label {
+  width: 30%;
+  margin-right: 2rem;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.input input {
+  width: 70%;
+}
+
+.btnCustom {
+  width: 30%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+  transition: background 0.3s, color 0.3s;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btnCustom:hover {
+  background: linear-gradient(to right, #1da5f1, #6e0a87);
+  color: #fff;
+}
+
+.genderContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.genderContainer input[type="radio"] {
+  margin-right: 5px;
+}
+
+.profileImg img {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+/* Responsive Design */
+
+/* Extra small devices (phones, <576px) */
+@media (max-width: 575.98px) {
+  .jobApp {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+  }
+
+  .form,
+  .rightSide {
+    width: 100%;
+  }
+
+  .rightSide {
+    border-radius: 20px;
+  }
+
+  .profileImg img {
+    max-width: 350px;
+    max-height: 350px;
+  }
+
+  .btnCustom {
+    width: 100%;
+  }
+  .containerJ {
+    margin: 300px 0;
+  }
+  .TotalAboutUs {
+    margin-top: 120px;
+  }
+}
+
+/* Small devices (landscape phones, ≥576px and <768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .jobApp {
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+  }
+
+  .form,
+  .rightSide {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .profileImg img {
+    max-width: 250px;
+    max-height: 250px;
+  }
+
+  .btnCustom {
+    width: 70%;
+  }
+}
+
+/* Medium devices (tablets, ≥768px and <992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .jobApp {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .form,
+  .rightSide {
+    width: 90%;
+  }
+
+  .rightSide {
+    border-radius: 20px;
+    padding: 20px;
+  }
+
+  .profileImg img {
+    max-width: 400px;
+    max-height: 400px;
+  }
+  .containerJ {
+    margin: 300px 0;
+  }
+  .TotalAboutUs {
+    margin-top: 120px;
+  }
+}
+
+/* Large devices (desktops, ≥992px and <1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .jobApp {
+    flex-direction: row;
+    height: 700px;
+  }
+
+  .form,
+  .rightSide {
+    width: 50%;
+  }
+
+  .rightSide {
+    border-radius: 130px 20px 20px 130px;
+  }
+
+  .profileImg img {
+    max-width: 400px;
+    max-height: 400px;
+  }
+  .containerJ {
+    margin: 150px 0;
+  }
+  .containerJ {
+    margin-top: 200px;
+  }
+}
+
+/* Extra large devices (large desktops, ≥1200px and <1400px) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  /* Styles for extra large devices */
+  .jobApp {
+    width: 90%;
+  }
+
+  .form,
+  .rightSide {
+    width: 50%;
+  }
+  .containerJ {
+    margin-top: 200px;
+  }
+}
+
+/* Extra extra large devices (larger desktops, ≥1400px) */
+@media (min-width: 1400px) {
+  /* Styles for extra extra large devices */
+  .jobApp {
+    width: 85%;
+  }
+
+  .form,
+  .rightSide {
+    width: 45%;
+  }
+  .containerJ {
+    margin-top: 200px;
+  }
+}
