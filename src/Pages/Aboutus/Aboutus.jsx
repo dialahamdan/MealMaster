@@ -117,27 +117,11 @@ function Aboutus() {
           <div className={styles.TotalAboutUs}>
             <div className={styles.Section1}>
               <iframe
-                src="https://sanadalrabayaa11.github.io/Section-1/"
-                style={{ width: "100%", height: "80vh", border: "none" }}
-                title="Project Embed"
-              />
-            </div>
-            <div className={styles.Section1}>
-              <iframe
                 src="https://dialahamdan.github.io/Dialas-Profile/"
                 style={{ width: "100%", height: "80vh", border: "none" }}
                 title="Project Embed"
               />
             </div>
-
-            <div className={styles.Section1}>
-              <iframe
-                src="https://sanadalrabayaa11.github.io/Section-2/"
-                style={{ width: "100%", height: "80vh", border: "none" }}
-                title="Project Embed"
-              />
-            </div>
-
             <div className={styles.containerJ}>
               <div className={styles.jobApp}>
                 <div className={`${styles.form} p-4`}>
